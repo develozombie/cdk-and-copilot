@@ -1,16 +1,16 @@
-# The manifest for the "innovate02" service.
+# The manifest for the "hits-servc" service.
 # Read the full specification for the "Load Balanced Web Service" type at:
 #  https://aws.github.io/copilot-cli/docs/manifest/lb-web-service/
 
 # Your service name will be used in naming your resources like log groups, ECS services, etc.
-name: innovate02
+name: hits-servc
 type: Load Balanced Web Service
 
 # Distribute traffic to your service.
 http:
   # Requests to this path will be forwarded to your service.
   # To match all requests you can use the "/" path.
-  path: 'innovate02'
+  path: 'hits-servc'
   # You can specify a custom health check path. The default is "/".
   # healthcheck: '/'
 
