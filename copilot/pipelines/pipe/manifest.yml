@@ -16,7 +16,7 @@ source:
   # Additional properties that further specify the location of the artifacts.
   properties:
     branch: main
-    repository: https://github.com/jyapurv/cdk-and-copilot
+    repository: https://github.com/nathanpeck/cdk-and-copilot
     # Optional: specify the name of an existing CodeStar Connections connection.
     # connection_name: a-connection
 
@@ -24,11 +24,6 @@ source:
 stages:
   - # The name of the environment.
     name: test
-    deployments:
-      deploy-env:
-        template_path: infrastructure/test.env.yml
-        template_config: infrastructure/test.env.params.json
-        stack_name: hit-counter-test
     # Optional: flag for manual approval action before deployment.
     # requires_approval: true
     # Optional: use test commands to validate this stage of your build.
