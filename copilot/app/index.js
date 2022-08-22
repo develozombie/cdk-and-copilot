@@ -35,7 +35,7 @@ app.get('*', function (req, res) {
       return res.send(err);
     } else {
       var hitCount = results.Attributes.hitCount;
-      res.send(`There have been ${hitCount} hits. (${hostname})`);
+      res.send(`There have been ${hitCount} hits... (${hostname})`);
     }
   });
 });
