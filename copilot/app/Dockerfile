@@ -2,7 +2,7 @@ FROM public.ecr.aws/docker/library/node:18 AS build
 WORKDIR /srv
 ADD package.json .
 RUN npm install
-#demo
+
 FROM public.ecr.aws/docker/library/node:18-slim
 COPY --from=build /srv .
 ADD . .
