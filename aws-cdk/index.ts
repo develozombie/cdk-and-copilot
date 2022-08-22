@@ -10,6 +10,7 @@ import {
   Service,
   ServiceDescription
 } from '@aws-cdk-containers/ecs-service-extensions';
+import { Platform } from 'aws-cdk-lib/aws-ecr-assets';
 
 const app = new App();
 const stack = new Stack(app, 'hit-counter-demo');
@@ -24,7 +25,7 @@ hitCounterDescription.add(new Container({
   cpu: 1024,
   memoryMiB: 2048,
   trafficPort: 80,
-  image: ecs.ContainerImage.fromAsset('app')
+  image: ecs.ContainerImage.fromAsset('app', {platform:Platform.LINUX_AMD64,})
 }));
 
 // Add a DynamoDB table
