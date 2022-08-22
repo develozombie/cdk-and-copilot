@@ -15,7 +15,7 @@ hitCounterDescription.add(new ecs_service_extensions_1.Container({
     cpu: 1024,
     memoryMiB: 2048,
     trafficPort: 80,
-    image: aws_ecs_1.ContainerImage.fromAsset('app')
+    image: aws_ecs_1.ContainerImage.fromAsset('app', {platform:Platform.LINUX_AMD64,})
 }));
 // Add autoscaling
 hitCounterDescription.add(new ecs_service_extensions_1.ScaleOnCpuUtilization({
