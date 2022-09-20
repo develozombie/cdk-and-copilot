@@ -12,7 +12,6 @@ if (!table) {
 
 const os = require('os');
 const hostname = os.hostname();
-
 app.get('*', function (req, res) {
   if (!table) {
     console.error('Error: The HITS_NAME environment variable needs to be set with the name of a DynamoDB table');
@@ -35,11 +34,10 @@ app.get('*', function (req, res) {
       return res.send(err);
     } else {
       var hitCount = results.Attributes.hitCount;
-      res.send(`There have been ${hitCount} hits (${hostname})`);
+      res.send(`There have been ${hitCount} hits. (${hostname})`);
     }
   });
 });
-
 app.listen(PORT, () => console.log(`Listening on port ${PORT}!`));
 
 // This causes the process to respond to "docker stop" faster
