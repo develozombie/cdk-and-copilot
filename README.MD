@@ -9,9 +9,9 @@
 2. Crear un nombre al espacio de Cloud9 y darle clic en siguiente.
 3. Configuraremos el tipo de instancia en t3.small para este workshop y dejamos el resto de valores por defecto.
 4. Ejecutamos los siguientes comandos para descargar AWS Copilot. \
-` curl -Lo copilot https://github.com/aws/copilot-cli/releases/latest/download/copilot-linux && chmod +x copilot && sudo mv copilot /usr/local/bin/copilot && copilot --help`
+`curl -Lo copilot https://github.com/aws/copilot-cli/releases/latest/download/copilot-linux && chmod +x copilot && sudo mv copilot /usr/local/bin/copilot && copilot --help`
 5. Iniciamos el servicio de docker: \
-` sudo service docker **start**`
+`sudo service docker **start**`
 6. Ahora vamos a Settings y desactivamos las credenciales administradas
 7. Creamos una política para Cloud9 llamada Cloud9Nerdearla  \
 https://us-east-1.console.aws.amazon.com/iam/home#/policies$new?step=edit \
