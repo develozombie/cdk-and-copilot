@@ -1,4 +1,4 @@
-# Workshop Nerdearla
+# Workshop CDK and Copilot
 
 
 ## Creación del ambiente de trabajo
