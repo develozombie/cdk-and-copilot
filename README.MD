@@ -38,7 +38,7 @@ con la siguiente estructura: \
 14. Necesitaremos configurar credenciales de AWS para poder continuar por lo que crearemos un usuario de terminal y ejecutaremos> \
 `aws configure`
 15. Ahora vamos a poner manos a la obra, comenzamos clonando el repositorio del workshop. \
-`git clone https://github.com/jyapurv/cdk-and-copilot`
+`git clone https://github.com/develozombie/cdk-and-copilot`
 
 
 ## Trabajando con CDK
