@@ -2,7 +2,7 @@ var aws = require('aws-sdk');
 const express = require('express');
 const app = express();
 const table = process.env.HITS_NAME;
-const PORT = 80; // The port to listen on....
+const PORT = 80; // The port to listen on.....
 
 const dynamodb = new aws.DynamoDB.DocumentClient();
 

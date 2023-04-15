@@ -13,7 +13,7 @@ import {
 import { Platform } from 'aws-cdk-lib/aws-ecr-assets';
 
 const app = new App();
-const stack = new Stack(app, 'hit-counter-demo');
+const stack = new Stack(app, 'hit-counter-demo-02');
 
 const environment = new Environment(stack, 'production');
 
@@ -41,7 +41,7 @@ hitCounterDescription.add(new DynamoDbTable('hits', {
 hitCounterDescription.add(new HttpLoadBalancerExtension());
 
 // Add the hit counter service to the production environment.
-new Service(stack, 'hit-counter', {
+new Service(stack, 'hit-counter-demo', {
   environment: environment,
   serviceDescription: hitCounterDescription,
 });

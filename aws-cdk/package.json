@@ -11,10 +11,10 @@
   "license": "MIT",
   "dependencies": {
     "@aws-cdk-containers/ecs-service-extensions": "2.0.0-alpha.92",
-    "aws-cdk-lib": "2.33.0",
     "aws-cdk": "2.33.0",
+    "aws-cdk-lib": "^2.33.0",
     "constructs": "10.0.5",
-    "typescript": "4.0.5",
-    "ts-node": "9.0.0"
+    "ts-node": "9.0.0",
+    "typescript": "4.0.5"
   }
 }
