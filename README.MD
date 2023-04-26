@@ -11,9 +11,9 @@
 4. Ejecutamos los siguientes comandos para descargar AWS Copilot. \
 `curl -Lo copilot https://github.com/aws/copilot-cli/releases/latest/download/copilot-linux && chmod +x copilot && sudo mv copilot /usr/local/bin/copilot && copilot --help`
 5. Iniciamos el servicio de docker: \
-`sudo service docker **start**`
+`sudo service docker start`
 6. Ahora vamos a Settings y desactivamos las credenciales administradas
-7. Creamos una política para Cloud9 llamada Cloud9Nerdearla  \
+7. Creamos una política para Cloud9 llamada Cloud9CDK  \
 https://us-east-1.console.aws.amazon.com/iam/home#/policies$new?step=edit \
 con la siguiente estructura: \
 ```json
