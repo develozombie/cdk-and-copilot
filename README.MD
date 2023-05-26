@@ -1,7 +1,7 @@
 # Workshop CDK and Copilot
 
 
-## Creación del ambiente de trabajo
+## Creación del ambiente de trabajo.
 
 
 
